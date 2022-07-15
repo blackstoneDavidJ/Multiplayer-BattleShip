@@ -1,13 +1,13 @@
 //represents one ship for the player
 public class Ship {
     private Coordinates[] shipCoords;
-    private final String id;
-    public Ship(Coordinates[] shipCoords, String id) {
+    private final int id;
+    public Ship(Coordinates[] shipCoords, int id) {
         this.shipCoords = shipCoords;
         this.id = id;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
@@ -21,7 +21,7 @@ public class Ship {
             System.out.println("[X: " +cords.getX() + " Y: " +cords.getY() +"]" +'\n');
         }
     }
-    public String showId()
+    public int showId()
     {
         return id;
     }
