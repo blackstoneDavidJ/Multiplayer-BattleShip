@@ -66,11 +66,12 @@ public class Player
         System.out.println("--Choose where to place your battleships--");
         int[] ships = new int[] {2,3,3,4,5};
         Coordinates[] shipCoords = new Coordinates[0];
-        int index = 0;
+
         for (int ship : ships) {
             System.out.println("Ship #" +ship);
+            shipCoords = new Coordinates[ship];
+            int index = 0;
             while (index < ship) {
-                shipCoords = new Coordinates[ship];
                 System.out.print("x: ");
                 int x = scanner.nextInt();
                 System.out.print("y: ");
